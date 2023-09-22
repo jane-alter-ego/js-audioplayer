@@ -10,15 +10,15 @@ const progress = document.getElementById('progress');
 const duration = document.getElementById('duration');
 const time = document.getElementById('time');
 const songs = ["Don't Hurt Yourself", "Don't Start Now"]; 
-//const artists = ["Beyonce", "Dua Lipa"];
+const artists = ["Beyonce", "Dua Lipa"];
 
 //песня по умолчанию
-let songIndex = 0;
+let songIndex = 1;
 //let artistIndex = 0;
 
 function loadSong(song) {
     title.innerHTML = song;
-    //artist.innerHTML = artist; //
+    artist.innerHTML = artists[songIndex];
     audio.src = `assets/audio/${song}.mp3`;
     image.src = `assets/img/image${songIndex + 1}.png`;
 }
@@ -38,31 +38,3 @@ function pauseSong() {
 buttonPlay.addEventListener('click', () => {
     playSong();
 })
-
-
-
-
-
-// let isPlay = false;
-
-// const audio = document.querySelector('audio');
-// function playAudio() {
-//     audio.currentTime = 0;
-//     audio.play();
-//     isPlay = true;
-// }
-// function pauseAudio() {
-//     audio.pause();
-//     isPlay = false;
-// }
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     document.getElementById("play").addEventListener("click", function() {
-//         if(!isPlay) {
-//             return playAudio();
-//         } else {
-//             return pauseAudio();
-//         }; 
-//     })
-// });
-
