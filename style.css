@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+body {
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 750px;
+    height: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+#image {
+    width: 750px;
+    height: 500px;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+
+#controlPanel {
+    width: 750px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    border-style: hidden;
+}
+
+#play {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#play > img {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+
+#artist-info {
+    width: 510px;
+    height: 100px;
+    margin: 20px;
+    font-size: 40px;
+
+}
+
+
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+#forward, #backward {
+    width: 50px;
+    height: 50px;
+}
+
+#forward > img, #backward > img {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+} 
+
+#runner {
+    width: 750px;
+    height: 150px;
+    background-color: grey;
+    border-style: hidden;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 600px;
+    
+}
+
+
