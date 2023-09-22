@@ -9,9 +9,11 @@
 <body>
     <div id="wrapper">
         <img id="image" src="assets/img/lemonade.png">
+        <audio id="music" src="assets/audio/beyonce.mp3"></audio>
+
         <div id="controlPanel">
 
-            <button id="play"><img src="assets/svg/play.png"></button>
+            <button id="play"><img class="play" src="assets/svg/play.png"></button>
             
             <div id="artist-info">
                 <p id="artist">Beyonce</p>
@@ -23,13 +25,14 @@
                 <button id="backward"><img src="assets/svg/backward.png"></button>
             </div>
         </div>    
-            <div id="runner">
-                <div id="duration"></div>
-                <input type="range" min="0" max="" value="0">
-                <div id="time"></div>
-            </div>
+        <div id="runner">
+            <div id="duration"></div>
+            <input id="progress" type="range" min="0" max="" value="0">
+            <div id="time"></div>
+        </div>
 
         
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
