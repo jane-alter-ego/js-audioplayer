@@ -1,3 +1,4 @@
+const player = document.getElementById('wrapper');
 const audio = document.querySelector('audio');
 const buttonPlay = document.getElementById('play');
 const buttonPause = document.querySelector('.play');
@@ -14,7 +15,6 @@ const artists = ["Beyonce", "Dua Lipa"];
 
 //песня по умолчанию
 let songIndex = 1;
-//let artistIndex = 0;
 
 function loadSong(song) {
     title.innerHTML = song;
@@ -26,15 +26,23 @@ function loadSong(song) {
 loadSong(songs[songIndex]);
 
 // play
-
 function playSong() {
+    player.classList.add('play');
     audio.play();
-}
+};
 
+//pause
 function pauseSong() {
+    player.classList.remove('play');
     audio.pause();
-}
+};
 
+//play-pause in the same btn
 buttonPlay.addEventListener('click', () => {
-    playSong();
+    const isPlaying = player.classList.contains('play');
+    if (isPlaying) {
+        pauseSong()
+    } else {
+        playSong();
+    };
 })
