@@ -48,3 +48,28 @@ buttonPlay.addEventListener('click', () => {
         playSong();
     };
 })
+
+// next 
+function nextSong() {
+    songIndex++;
+    if (songIndex > songs.length - 1) {
+        songIndex = 0;
+    }
+    loadSong(songs[songIndex]);
+    playSong();
+};
+
+buttonForward.addEventListener('click', nextSong);
+
+// back
+
+function prevSong() {
+    songIndex--;
+    if (songIndex < 0) {
+        songIndex = songs.length - 1;
+    }
+    loadSong(songs[songIndex]);
+    playSong();
+};
+
+buttonBackward.addEventListener('click', prevSong);
