@@ -8,7 +8,7 @@ const image = document.getElementById('image');
 const title = document.getElementById('title');
 const artist = document.getElementById('artist');
 const progress = document.getElementById('progress');
-const duration = document.getElementById('duration');
+const trackLength = document.getElementById('duration');
 const time = document.getElementById('time');
 const songs = ["Don't Hurt Yourself", "Don't Start Now"]; 
 const artists = ["Beyonce", "Dua Lipa"];
@@ -73,3 +73,21 @@ function prevSong() {
 };
 
 buttonBackward.addEventListener('click', prevSong);
+
+// progress bar
+
+function progressBar(e) {
+    const {duration, currentTime} = e.srcElement;
+    const progressPercent = (currentTime / duration) * 100;
+    progress.style.width = `${progressPercent}%`;
+    trackLength.innerHTML = getFormattedTime(duration);
+    time.innerHTML = getFormattedTime(currentTime); 
+}
+
+function getFormattedTime(time) {
+    if (Number.isNaN(time)) return '0:00';
+    const seconds = Math.floor(time % 60)
+    return `${Math.floor(time / 60) || '0'}:${seconds < 10 ? '0' + seconds : seconds}`
+}
+
+audio.addEventListener('timeupdate', progressBar);
