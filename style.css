@@ -19,28 +19,32 @@ button {
 }
 
 #wrapper {
-    max-width: 750px;
+    max-width: 700px;
     max-height: 800px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: plum;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
 }
 
 #image {
-    width: 750px;
+    /* width: 750px;
     height: 500px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0; */
     display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 40px 0;
 }
 
 #controlPanel {
-    width: 750px;
-    height: 150px;
+    width: 700px;
+    height: 125px;
     display: flex;
     flex-direction: row;
     background-color: grey;
@@ -57,6 +61,7 @@ button {
     width: 100px;
     height: 100px;
     background-color: grey;
+   
 }
 
 #artist-info {
@@ -64,7 +69,11 @@ button {
     height: 100px;
     margin: 20px;
     font-size: 40px;
+}
 
+#artist {
+    color: plum;
+    text-shadow: 1px 1px black;
 }
 
 #controls {
@@ -89,15 +98,12 @@ button {
 } 
 
 #runner {
-    width: 750px;
-    height: 110px;
+    width: 700px;
+    height: 100px;
     background-color: grey;
-    border-style: hidden;
-    border-radius: 0 0 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: center; */
     padding: 25px 0;
 
 }
@@ -110,7 +116,7 @@ button {
 }
 
 #progress {
-    background-color: black;
+    background-color: plum;
     width: 10px;
     height: 15px;
     border-radius: 5px;
@@ -118,28 +124,31 @@ button {
 }
 
 #time {
-    color: white;
-    font-size: 20px;
+    color: plum;
+    font-size: 25px;
     align-self: flex-start;
     margin-left: 50px;
+    text-shadow: 1px 1px black;
 }
 
 #duration {
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     align-self: flex-end;
     margin-right: 50px;
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 footer {
     background-color: black;
     padding: 5px 20px;
-    width: 710px;
+    width: 660px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     box-shadow: 0 0 10px black;
 
 }
