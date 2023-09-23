@@ -1,7 +1,7 @@
 const player = document.getElementById('wrapper');
 const audio = document.querySelector('audio');
 const buttonPlay = document.getElementById('play');
-const buttonPause = document.querySelector('.play');
+const buttonSrc = document.querySelector('.src');
 const buttonForward = document.getElementById('forward');
 const buttonBackward = document.getElementById('backward');
 const image = document.getElementById('image');
@@ -14,7 +14,7 @@ const songs = ["Don't Hurt Yourself", "Don't Start Now"];
 const artists = ["Beyonce", "Dua Lipa"];
 
 //песня по умолчанию
-let songIndex = 1;
+let songIndex = 0;
 
 function loadSong(song) {
     title.innerHTML = song;
@@ -28,12 +28,14 @@ loadSong(songs[songIndex]);
 // play
 function playSong() {
     player.classList.add('play');
+    buttonSrc.src = `assets/svg/pause.png`;
     audio.play();
 };
 
 //pause
 function pauseSong() {
     player.classList.remove('play');
+    buttonSrc.src = `assets/svg/play.png`;
     audio.pause();
 };
 
