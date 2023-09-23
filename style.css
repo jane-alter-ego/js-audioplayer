@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+body {
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+#wrapper {
+    max-width: 700px;
+    max-height: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: plum;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+#header {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#image {
+    /* width: 750px;
+    height: 500px;
+    border-radius: 10px 10px 0 0; */
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 40px 0;
+}
+
+.img {
+    &.active {
+        animation: rotateAnimation 5s linear infinite;
+    }
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#controlPanel {
+    width: 700px;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    border-style: hidden;
+}
+
+#play {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#play > img {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+   
+}
+
+#artist-info {
+    width: 510px;
+    height: 100px;
+    margin: 20px;
+    font-size: 40px;
+}
+
+#artist {
+    color: plum;
+    text-shadow: 1px 1px black;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+#forward, #backward {
+    width: 50px;
+    height: 50px;
+}
+
+#forward > img, #backward > img {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+} 
+
+#runner {
+    width: 700px;
+    height: 100px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0;
+
+}
+
+#input {
+    width: 600px;
+    background-color: white;
+    border-radius: 5px;
+    align-self: center;
+}
+
+#progress {
+    background-color: plum;
+    width: 10px;
+    height: 15px;
+    border-radius: 5px;
+    
+}
+
+#time {
+    color: plum;
+    font-size: 25px;
+    align-self: flex-start;
+    margin-left: 50px;
+    text-shadow: 1px 1px black;
+}
+
+#duration {
+    color: black;
+    font-size: 25px;
+    align-self: flex-end;
+    margin-right: 50px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+footer {
+    background-color: black;
+    padding: 5px 20px;
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px black;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+ul > li {
+    padding-right: 20px;
+}
+
+#rss-logo img {
+    width: 60px;
+    padding-right: 20px;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>audioplayer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    
+    <div id="wrapper">
+        <p id="header">Now Playing</p>
+        <img id="image" class="img" src="assets/img/lemonade.png">
+        <audio id="music" src="assets/audio/beyonce.mp3"></audio>
+
+        <div id="controlPanel">
+
+            <button id="play"><img class="src" src="assets/svg/play.png"></button>
+            
+            <div id="artist-info">
+                <p id="artist">Beyonce</p>
+                <p id="title">Don't Hurt Yourself</p>
+            </div>
+
+            <div id="controls">
+                <button id="forward"><img src="assets/svg/forward.png"></button>
+                <button id="backward"><img src="assets/svg/backward.png"></button>
+            </div>
+        </div>    
+        <div id="runner">
+            <div id="duration"></div>
+            <div id="input">
+                <div id="progress"></div>
+            </div>
+            <div id="time"></div>
+        </div>
+    
+    <footer>
+        <ul>
+            <li id="year">2023</li>
+            <li id="github"><a class="link" href="https://github.com/jane-alter-ego" target="_blank">@jane-alter-ego</a></li>        
+        </ul>
+        <div id="rss-logo">
+            <a class="link" href="https://rs.school/js-stage0/" target="_blank"><img src="assets/svg/rss.svg"></a> 
+        </div>   
+    </footer>
+    </div>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
