@@ -29,6 +29,7 @@ loadSong(songs[songIndex]);
 function playSong() {
     player.classList.add('play');
     buttonSrc.src = `assets/svg/pause.png`;
+    image.classList.add('active');
     audio.play();
 };
 
@@ -36,6 +37,7 @@ function playSong() {
 function pauseSong() {
     player.classList.remove('play');
     buttonSrc.src = `assets/svg/play.png`;
+    image.classList.remove('active');
     audio.pause();
 };
 

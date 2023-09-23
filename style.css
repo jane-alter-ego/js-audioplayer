@@ -31,6 +31,11 @@ button {
     box-shadow: 0 0 10px black;
 }
 
+#header {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
 #image {
     /* width: 750px;
     height: 500px;
@@ -40,6 +45,20 @@ button {
     height: 300px;
     border-radius: 50%;
     margin: 40px 0;
+}
+
+.img {
+    &.active {
+        animation: rotateAnimation 5s linear infinite;
+    }
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 #controlPanel {
