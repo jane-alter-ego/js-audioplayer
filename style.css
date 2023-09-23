@@ -67,8 +67,6 @@ button {
 
 }
 
-
-
 #controls {
     display: flex;
     flex-direction: column;
@@ -92,7 +90,7 @@ button {
 
 #runner {
     width: 750px;
-    height: 150px;
+    height: 110px;
     background-color: grey;
     border-style: hidden;
     border-radius: 0 0 10px 10px;
@@ -107,4 +105,39 @@ input {
     
 }
 
+footer {
+    background-color: black;
+    padding: 5px 20px;
+    width: 710px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+ul > li {
+    padding-right: 20px;
+}
+
+#rss-logo img {
+    width: 60px;
+    padding-right: 20px;
+}
 
